@@ -1,0 +1,1189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+html {
+    font: normal 16px sans-serif;
+}
+
+body{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Scheherazade New', serif;
+}
+
+.container{
+    width: 1020px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    margin-bottom: 50px;
+    font-size: 42px;
+    line-height: 50px;
+    max-width: 1020px;
+    color: #46394B;
+}
+
+a {
+    text-decoration: none;
+    color: #46394B;
+}
+
+/*Кнопка вверх для всех страниц*/
+.knopka {
+    position: fixed;
+	right: 100px;
+	bottom: 45px;
+}
+
+/*Шапка*/
+header {
+    width: 100%;
+    color: #46394B;
+    background-color: #89AFE5;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    width: 1020px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+header .menu {
+    width: 100%;
+    color: #46394B;
+    float: left;
+}
+
+.polos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    z-index: 1;
+}
+
+.polos p i {
+    margin-right: 10px;
+    color: #46394B;
+}
+
+.polos p select {
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #46394B;
+    width: 300px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 40px;
+    z-index: 2;
+}
+ 
+.icon ul {
+    display: flex;
+    justify-content: center;
+}
+
+.icon ul li {
+    font: bold 20px "Dancing Script", cursive;
+}
+
+.icon ul li i {
+    padding: 0 20px;
+}
+
+.icon ul li i {
+    opacity: 0.9;
+}
+
+.icon ul li i:hover {
+    color: #46394B;
+    font-weight: 700;
+    opacity: 1;
+}
+
+
+/*Логотип*/
+.logmen {
+    width: 1020px;
+    color: #46394B;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo a img {
+    width: 70px;
+    height: 70px;
+}
+
+/*Меню*/
+menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+menu ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 0 10px;
+}
+
+menu ul li {
+    margin-bottom: 60px;
+    padding: 0 20px;
+    font: bold 20px "Dancing Script", cursive;
+}
+
+menu ul li a {
+    opacity: 0.8;
+}
+
+menu ul li a:hover {
+    color: #46394B;
+    font-weight: 900;
+    opacity: 1;
+}
+
+/*Поле поиска*/
+.poisk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 30px 150px;
+}
+
+form {
+    width: 1020px;
+    margin: auto;
+}
+
+input{
+    padding: 4px 10px;
+    border: solid 1px #46394B;
+    font-size: 16px;
+    height: 47px;
+    border-radius: 5%;
+}
+
+.search {
+    width: 72%;
+    color: #46394B;
+    font-weight: 700;
+}
+
+.submit {
+    width: 106px;
+    background-color: #46394B;
+    color:#ffffff;
+    opacity: 1;
+}
+
+.submit:hover {
+    opacity: 0.8;
+}
+
+/*Способ проезда в инспекцию*/
+.sposob {
+    width: 1020px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pole {
+    width: 1020px;
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    color: #46394B;
+    margin-left: 30px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+#rectangle {
+    width: 200px;
+    height: 80px;
+    text-align: center;
+    padding-top: 15px;
+    color: #46394B;
+    font-weight: 700;
+    background: #d8d6d6;
+    border-radius: 5%;
+    box-shadow: 5px 5px 10px black;
+    margin-left: 440px;
+}
+
+.geolocation {
+    width: 1020px;
+    display: flex;
+    flex-direction: row;
+}
+
+.karta {
+    width: 1020px;
+    display: flex;
+    flex-direction: row;
+}
+
+.karta h3 {
+    color: #46394B;
+    font-weight: 700;
+    margin: 10px 0 0 80px;
+}
+
+.geolocation .map {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 34px;
+}
+
+#square {
+    width: 200px;
+    height: 500px;
+    background: #d8d6d6;
+    border-radius: 5%;
+    box-shadow: 5px 5px 10px black;
+    margin-top: 30px;
+}
+
+.navigation {
+    text-align: left;
+    position: absolute;
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: #46394B;
+    line-height: 30px;
+}
+
+.navigation li i {
+    margin-right: 10px;
+}
+
+.navigation li a {
+    opacity: 0.8;
+}
+
+.navigation li a:hover {
+    color: #46394B;
+    font-weight: 900;
+    opacity: 1;
+}
+
+.info {
+    width: 1020px;
+    display: flex;
+    flex-direction: row;
+}
+
+.info p {
+    color: #46394B;
+    margin: 20px 0 0 80px;
+    line-height: 30px;
+}
+
+.info p i {
+    margin-right: 20px;
+}
+
+/*Фотографии инспекции*/
+.foto {
+    width: 1020px;
+    display: flex;
+    flex-direction: row;
+}
+
+.foto h3 {
+    color: #46394B;
+    font-weight: 700;
+    margin: 30px 0 0 80px;
+    font-size: 24px;
+}
+
+.slideshow-container {
+    width: 1020px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Анимация для "Фотографии инспекции"*/
+.maggd input{
+    display: none;
+}
+
+.maggd .controls {
+    text-align: center;
+    color: #46394B;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.magic {
+    width: 1020px;
+    display: flex;
+    padding-left: 160px !important;
+    margin: 0 auto;
+    height: 400px;
+    padding: 20px 0;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.moc-1,
+.moc-2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 590px;
+    height: 755px;
+    border-radius: 5px;
+    transform: translate(0);
+    transition: all 0.3s linear;
+    box-shadow: 10px 10px 10px #46394B;
+}
+
+.magic img{
+    max-width: 750px;
+    max-height: 400px;
+}
+
+.controls label {
+    cursor: pointer;
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50%;
+    background-color: #d8d6d6;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+#btn-1:checked ~ .controls label[for="btn-1"],
+#btn-2:checked ~ .controls label[for="btn-2"] {
+    background-color: #46394B;
+}
+
+#btn-1:checked ~ .magic .moc-1,
+#btn-1:checked ~ .magic .moc-2 {
+    transform: translate(0);
+}
+
+#btn-2:checked ~ .magic .moc-1,
+#btn-2:checked ~ .magic .moc-2 {
+    transform: translate(-1300px, 0);
+}
+
+/*Официальные реквизиты инспекции*/
+.recvizit {
+    width: 1020px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section {
+    width: 1020px;
+    display: flex;
+    flex-direction: row;
+}
+
+.section .title {
+    margin-top: 50px;
+}
+
+.Official {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.Official table {
+    width: 600px;
+    height: 300px;
+    background: #d8d6d6;
+    border-radius: 5%;
+    box-shadow: 5px 5px 10px black;
+}
+
+.Official table tr .solid {
+    padding: 10px 10px;
+    border-bottom: solid 1px #46394B;
+    border-right: solid 1px #46394B;
+}
+
+.Official table tr .solidd {
+    padding: 10px 10px;
+    border-bottom: solid 1px #46394B;
+}
+
+.Official table tr .polosa {
+    padding: 10px 10px;
+    border-right: solid 1px #46394B;
+}
+
+.Official table tr .polosaa {
+    padding: 10px 10px;
+}
+
+/*Структура инспекции*/
+.nazvanie {
+    width: 1020px;
+    display: flex;
+    flex-direction: row;
+}
+
+.nazvanie .title {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.blok {
+    width: 1020px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.otdel {
+    width: 1020px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#structure {
+    width: 250px;
+    height: 250px;
+    background: #d8d6d6;
+    margin: 10px 60px 10px 30px;
+    border-radius: 10%;
+    box-shadow: 5px 5px 10px black;
+    text-align: center;
+}
+
+button {
+    width: 250px;
+    height: 250px;
+    background: #d8d6d6;
+    border-radius: 10%;
+    border: none;
+    text-align: center;
+}
+
+button:hover {
+    border: solid 2px #46394B;
+    box-shadow: 10px 10px 10px #46394B;
+}
+
+.text-blok {
+    text-align: center;
+    padding: 90px 5px 90px 5px;
+    color: #000000;
+}
+
+.text-blok1 {
+    text-align: center;
+    padding: 110px 0px 110px 0px;
+    color: #000000;
+}
+
+.only {
+    width: 1020px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#structuree {
+    width: 250px;
+    height: 250px;
+    background: #d8d6d6;
+    margin: 10px 60px 10px 30px;
+    border-radius: 10%;
+    box-shadow: 5px 5px 10px black;
+    text-align: center;
+}
+
+button .separately {
+    width: 250px;
+    height: 250px;
+    background: #d8d6d6;
+    border-radius: 10%;
+    border: none;
+    text-align: center;
+}
+
+button .separately:hover {
+    border: solid 2px #46394B;
+    box-shadow: 10px 10px 10px #46394B;
+}
+
+.text-blok {
+    text-align: center;
+    padding: 90px 5px 90px 5px;
+    color: #000000;
+}
+
+.text-blok1 {
+    text-align: center;
+    padding: 110px 0px 110px 0px;
+    color: #000000;
+}
+
+/*Анимация "Структура инспекции*/
+
+
+/*Подвал*/
+footer {
+    width: 100%;
+    color: #46394B;
+    background-color: #89AFE5;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+}
+
+.logotip {
+    width: 1020px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logotip ul {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.logotip ul li {
+    font: bold 20px "Dancing Script", cursive;
+}
+
+.logotip ul li a {
+    padding: 0 60px;
+    opacity: 0.9;
+}
+
+.logotip ul li a:hover {
+    opacity: 1;
+}
+
+.ikon {
+    width: 1020px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.ikon ul {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.ikon ul li {
+    font: bold 20px "Dancing Script", cursive;
+}
+
+.ikon ul li a {
+    padding: 0 30px;
+    justify-content: start;
+}
+
+.ikon ul li a i {
+    font-size: 32px;
+    opacity: 0.9;
+}
+
+.ikon ul li p {
+    margin-left: 450px;
+}
+
+.ikon ul li a i:hover {
+    color: #46394B;
+    font-weight: 700;
+    opacity: 1;
+}
+
+/*Страница О ФНС России*/
+/*Инфа о инспекции*/
+.readstrok {
+    text-indent: 50px;
+    color: #46394B;
+    margin-bottom: 50px;
+}
+
+/*Деятельность*/
+.activity {
+    width: 550px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 230px;
+    margin-top: 50px;
+    color: #0566B0;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px #cccccc;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.activity div {
+    margin: 0 30px;
+    text-align: center;
+}
+
+.activity div i {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+/*Страница Новости*/
+/*Мероприятия для налогоплательщиков*/
+/*Информационные материалы для налогоплательщиков*/
+/*Противодействие коррупции*/
+/*Государственная гражданская служба в инспекции*/
+.read {
+    width: 1020px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #46394B;
+}
+
+.read .further {
+    width: 850px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.further p { 
+    padding: 10px 0;
+}
+
+.further p a {
+    padding: 10px 0;
+    color: #89AFE5;
+}
+
+/*Оформление кнопки читать далее*/
+
+
+/*Страница Сервисы и услуги*/
+/*Инспекция предоставляет следующие услуги*/
+.blocking {
+    width: 1020px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+#onlyy {
+    width: 50px;
+    height: 50px;
+    background: #05009A;
+    border-radius: 10%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 22px;
+    padding-top: 10px;
+    margin: 10px 20px;
+}
+
+#twoo {
+    width: 50px;
+    height: 50px;
+    background: #B87333;
+    border-radius: 10%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 22px;
+    padding-top: 10px;
+    margin: 10px 20px;
+}
+
+#treee {
+    width: 50px;
+    height: 50px;
+    background: #89AFE5;
+    border-radius: 10%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 22px;
+    padding-top: 10px;
+    margin: 10px 20px;
+}
+
+#fourr {
+    width: 50px;
+    height: 50px;
+    background: #ff5722;
+    border-radius: 10%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 22px;
+    padding-top: 10px;
+    margin: 10px 20px;
+}
+
+#fivee {
+    width: 50px;
+    height: 50px;
+    background: #0566B0;
+    border-radius: 10%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 22px;
+    padding-top: 10px;
+    margin: 10px 20px;
+}
+
+.following {
+    width: 1020px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #46394B;
+    margin-top: 20px;
+}
+
+.services {
+    width: 1020px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 80px;
+}
+
+.methods {
+    width: 1020px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    float: left;
+}
+
+.methods p {
+    padding-top: 15px;
+    padding-bottom: 16px;
+}
+
+.block {
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    float: right;
+    align-items: flex-end;
+    position: absolute;
+}
+
+.podblock {
+    width: 1020px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 650px;
+}
+
+#only {
+    width: 30px;
+    height: 30px;
+    background: #d8d6d6;
+    margin: 13px 10px;
+    border-radius: 10%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 17px;
+}
+
+#only1 {
+    width: 30px;
+    height: 30px;
+    background: #05009A;
+    margin: 13px 10px;
+    border-radius: 10%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 17px;
+}
+
+#two {
+    width: 30px;
+    height: 30px;
+    background: #B87333 ;
+    margin: 13px 10px;
+    border-radius: 10%;
+    text-align: center;
+    text-align: center;
+    color: #ffffff;
+    font-size: 17px;
+}
+
+#three {
+    width: 30px;
+    height: 30px;
+    background: #89AFE5;
+    margin: 13px 10px;
+    border-radius: 10%;
+    text-align: center;
+    text-align: center;
+    color: #ffffff;
+    font-size: 17px;
+}
+
+#four {
+    width: 30px;
+    height: 30px;
+    background: #ff5722;
+    margin: 13px 10px;
+    border-radius: 10%;
+    text-align: center;
+    text-align: center;
+    color: #ffffff;
+    font-size: 17px;
+}
+
+#five {
+    width: 30px;
+    height: 30px;
+    background: #0566B0;
+    margin: 13px 10px;
+    border-radius: 10%;
+    text-align: center;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#five i {
+    margin-top: 5px;
+}
+
+/*Госуслуги/форма*/
+.gos {
+    width: 1020px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    margin-top: 40px;
+}
+
+.forma {
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px #cccccc;
+    border-radius: 10px;
+}
+
+.forma .exid {
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 42px;
+    color: #46394B;
+    margin: 0;
+    padding: 0;
+}
+
+.forma .text {
+    color: #46394B;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.forma .gosknop {
+    text-align: center;
+}
+
+.gosknop .gsknp {
+    margin-bottom: 10px;
+    border: 2px solid #46394B;
+    width: 260px;
+    text-align: center;
+}
+
+.forma .check {
+    display: flex;
+    justify-content: center;
+}
+
+.check p {
+    margin-left: 10px;
+}
+
+.gosknop .enter {
+    background-color: #89AFE5;
+    width: 260px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.gosknop .enter:hover {
+    opacity: 0.9;
+}
+
+.forma p {
+    text-align: center;
+    color: #46394B;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.forma .pon:hover {
+    color: #46394B;
+    font-weight: 900;
+}
+
+/*Страница Документы*/
+/*Форма*/
+.dock {
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px #cccccc;
+    border-radius: 10px;
+}
+
+label {
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 22px;
+    color: #46394B;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 370px;
+    height: 30px;
+}
+
+.dock select {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 370px;
+    height: 30px;
+}
+
+.reg {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.prim {
+    background-color: #89AFE5;
+    width: 370px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.prim:hover {
+    opacity: 0.9;
+}
+
+/*Страница Сравка*/
+/*График работы*/
+.grafik {
+    width: 1020px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section {
+    width: 1020px;
+    display: flex;
+    flex-direction: row;
+}
+
+.section .title {
+    margin-top: 50px;
+}
+
+.grafa {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.grafa table {
+    width: 600px;
+    height: 300px;
+    background: #d8d6d6;
+    border-radius: 5%;
+    box-shadow: 5px 5px 10px black;
+}
+
+.grafa table tr .week {
+    text-align: center;
+    padding: 10px 10px;
+    border-bottom: solid 1px #46394B;
+    border-right: solid 1px #46394B;
+    color: #46394B;
+}
+
+.grafa table tr .time {
+    text-align: center;
+    padding: 10px 10px;
+    border-bottom: solid 1px #46394B;
+    color: #46394B;
+}
+
+.grafa table tr .polosa {
+    text-align: center;
+    padding: 10px 10px;
+    border-right: solid 1px #46394B;
+    color: #46394B;
+}
+
+.grafa table tr .polosaa {
+    text-align: center;
+    padding: 10px 10px;
+    color: #46394B;
+}
+
+/*Иная обязательная информация*/
+.reference {
+    width: 1020px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #46394B;
+}
+
+.reftab {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.reftab table {
+    width: 800px;
+    height: 800px;
+    background: #d8d6d6;
+    border-radius: 5%;
+    box-shadow: 5px 5px 10px black;
+}
+
+.reftab table tr {
+    text-align: center;
+}
+
+.reftab table tr .line {
+    border-bottom: solid 1px #46394B;
+}
+
+/*Адреса ближайших МФЦ*/
+.other {
+    width: 1020px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #46394B;
+}
+
+/*Управление ФНС России по региону*/
+.corruption {
+    width: 1020px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #46394B;
+}
+
+.maps {
+    text-align: center;
+}
+
+.infor p {
+    margin: 20px 0px;
+    line-height: 30px;
+    align-items: center;
+}
+
+.tbl {
+    width: 1020px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tbl table {
+    width: 650px;
+    height: 300px;
+    margin-left: 80px;
+}
+
+.tbl table tr td {
+    padding: 0 20px;
+}
+
